@@ -19,7 +19,11 @@ document.getElementById('voir-projets-btn').addEventListener('click', () => {
 document.getElementById('telecharger-cv').addEventListener('click', () => { 
     alert('Téléchargement du CV en cours...');
     // Ici, vous pouvez ajouter un vrai lien pour télécharger un fichier, par exemple :
-     window.location.href = 'fichier/Cv_KALDJOB.pdf';
+     //window.location.href = 'fichier/Cv_KALDJOB.pdf';
+    const link = document.createElement("a");
+  link.href = "fichier/Cv_KALDJOB.pdf";  // Chemin du fichier
+  link.download = "Cv_KADJOB.pdf"; // Nom du fichier téléchargé
+  link.click();
 });
 
 
@@ -52,6 +56,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   //redirection vers whatsapp
   window.location.href=url;
 });
+
 
 
 
