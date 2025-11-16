@@ -16,7 +16,7 @@ document.getElementById('voir-projets-btn').addEventListener('click', () => {
 });
 
 // Téléchargement fictif du CV (exemple)
-document.getElementById('telecharger-cv').addEventListener('click', () => {
+document.getElementById('telecharger-cv').addEventListener('click', () => { 
     alert('Téléchargement du CV en cours...');
     // Ici, vous pouvez ajouter un vrai lien pour télécharger un fichier, par exemple :
      window.location.href = 'fichier/Cv_KALDJOB.pdf';
@@ -43,10 +43,11 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   //ton numero whatsapp
   const phone ="237691132190";
   //construction du message 
-  const text = "prenom : " +prenom+ "" + \n"Nom :" +nom+ "" + \n"Sujet:"+sujet+ "" + \n"Message:"+message;
+  const text = "Prenom : " +prenom+ "" + \n"Nom :" +nom+ "" + \n\n"Sujet:"+sujet+ "" + \n"Message:"+message;
   const url="https://wa.me/" +phone+ "?text=" + text;
 
   //redirection vers whatsapp
   window.location.href=url;
 });
+
 
