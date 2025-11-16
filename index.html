@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Nom + Prénom</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <i><div class="logo">KALDJOB <span class="highlight">GEORGETTE</span></div></i>
+        <nav>
+           <i> <ul>
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul></i>
+        </nav>
+    </header>
+     
+    <section id="accueil" class="accueil-section">
+        <div class="texte-accueil">
+            <h1>
+                Hello!!!, je suis <i><strong>Georgette</strong></i>, Informaticienne
+                passionné par le web, la technologie et le design !
+            </h1>
+            <button id="voir-projets-btn"> <i>Voir mes projets</i> </button>
+        </div>
+        <div class="image-accueil">
+            <img src="images/web-dev.jpg" alt="Développeurs au travail" />
+        </div>
+    </section>
+
+    <section id="apropos" class="apropos-section">
+        <h2 class="section-title"><strong>À propos</strong></h2>
+        <div class="apropos-content">
+            <p><strong>En tant que jeune diplômé en Licence en Administration et Système Réseau en Génie Informatique, 
+                je souhaite mettre à profil une fois de plus mes compétences en administration des réseaux avec tous ce que ça comporte ; 
+                Avec plus de 5 ans d'expérience dans l’outil informatique, la gestion de systèmes informatiques et la cybersécurité. 
+                Compétente en programmation, administration de bases de données. 
+                Reconnu pour mes compétences en résolution de problèmes, mon esprit d'équipe et ma capacité à livrer des projets dans les délais impartis.
+                 Toujours à la recherche de nouvelles technologies et solutions innovantes pour améliorer l'efficacité et la sécurité des systèmes informatiques. 
+                </strong></p>
+            <button id="telecharger-cv" onclick="telecharger()"><i>Télécharger mon CV</i></button>
+            <img src="images/img5.jpg" alt="Photo de profil" class="photo-profil" />
+        </div>
+    </section>
+
+    <section id="projets" class="projets-section">
+        <h2 class="section-title"><strong>Mes Projets</h2></strong>
+        <strong>
+        <div class="projets-grid" >
+            <div class="projet-card" >
+                <p>Conception dùun site web de prestation de service pour le cabinet LECARE Agriculture; 
+                Qui est concentré dans l'analyse des sols, étude des rendements agricols, climatique...</p>
+                <p>Usage du HTML, JavaScript, CSS</p>
+               <button class="voir-btn" onclick="window.location.href='https://lecare-agriculture.vercel.app'"><i>Voir</i></button>
+            </div>
+            <div class="projet-card" >
+                <p>Conception d'un site vitrine pour l'entreprise AIADS,
+                    qui se focalise sur l'accompagnement des agricultuers, piscicultures et éléveurs, dans la production artisanale et la production immobilier; 
+                    offre des formations... </p>
+                <p>Usage du HTML, JavaScript, CSS </p>
+                <button class="voir-btn" onclick="window.location.href='https://aiads-projet.vercel.app'"><i>Voir</i></button>
+            </div>
+            <div class="projet-card" >
+                <p>Conception d'un portfolio au nom de Mlle KALDJOB </p>
+                <p>Usage du HTML, JavaScript, CSS</p>
+                <button class="voir-btn" onclick="window.location.href='https://portfolio-projet.vercel.app'"><i>Voir</i></button>
+            </div>
+        </div>
+        </strong>
+    </section>
+
+    <section class="skills-section">
+      <h2>Mes Compétences</h2>
+
+      <div class="skills-container">
+        <!-- Soft Skills -->
+        <div class="skills-box">
+          <h3>Compétences Professionnelles </h3>
+          <div class="skill">
+            <span>Analyse des données avec Excel, Programmation avec Excel</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Maintenance des équipements informatiques</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span> Manipulation des base de données MYSQL</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-container">
+        <!-- hability Skills -->
+        <div class="skills-box">
+          <h3>Habilités Personnelles et Relationnelles</h3>
+          <div class="skill">
+            <span>Assidu</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Attentif</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Compréhensif</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hard Skills -->
+        <div class="skills-box">
+          <h3>Maitrise des Logiciels</h3>
+          <div class="skill">
+            <span>Suite office (Word, Excel, ...)</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 55%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Wampserver</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 45%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Visual Studio Code (VSC)</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Logiciel de virtualisation (virtualbox, Vm ware) </span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+      <h2>
+        <span>Vous avez un </span>
+        <span>projet en tête ?</span><br />
+        <span>N'hésitez pas à me contacter</span>
+      </h2>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+        </div>
+        <input type="text" id="sujet" name="sujet" placeholder="Votre sujet" required />
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+        <button type="submit"><i>Envoyer</i></button>
+      </form>
+    </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
