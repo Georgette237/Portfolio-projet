@@ -43,11 +43,12 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   //ton numero whatsapp
   const phone ="237691132190";
   //construction du message 
-  const text = "Prenom : " +prenom+ "" + \n"Nom :" +nom+ "" + \n\n"Sujet:"+sujet+ "" + \n"Message:"+message;
+  const text = "Prenom : " +prenom+ "" + \n"Nom :" +nom+ "" + \n"Sujet:"+sujet+ "" + \n"Message:"+message;
   const url="https://wa.me/" +phone+ "?text=" + text;
 
   //redirection vers whatsapp
   window.location.href=url;
 });
+
 
 
